@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as addAttribute, d as createAstro, b as renderComponent } from '../chunks/astro/server_CHXB-JrG.mjs';
 import 'kleur/colors';
 import { g as getCollection, A as ARTICLES_PER_PAGE, $ as $$MainLayout } from '../chunks/MainLayout_BocMpzex.mjs';
-import { $ as $$ArticleCard } from '../chunks/ArticleCard_BxFpqxe_.mjs';
+import { $ as $$ArticleCard } from '../chunks/ArticleCard_VmI9fmzz.mjs';
 import { $ as $$SearchForm } from '../chunks/SearchForm_CWu-_gI_.mjs';
 import 'clsx';
 export { renderers } from '../renderers.mjs';

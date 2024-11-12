@@ -3,7 +3,7 @@ import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as a
 import 'kleur/colors';
 import { f as formatDate, c as capitalize, g as getCollection, H as HOMEPAGE_ARTICLE_LIMIT, $ as $$MainLayout } from '../chunks/MainLayout_BocMpzex.mjs';
 import { $ as $$SearchForm } from '../chunks/SearchForm_CWu-_gI_.mjs';
-import { $ as $$ArticleCard } from '../chunks/ArticleCard_BxFpqxe_.mjs';
+import { $ as $$ArticleCard } from '../chunks/ArticleCard_VmI9fmzz.mjs';
 import { $ as $$Image } from '../chunks/_astro_assets_CLbSAJPr.mjs';
 export { renderers } from '../renderers.mjs';
 
@@ -12,7 +12,7 @@ const $$MostRecentArticle = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$MostRecentArticle;
   const { article } = Astro2.props;
-  return renderTemplate`${maybeRenderHead()}<div class="relative inline-block w-full sm:w-auto cursor-pointer rounded-2xl"> <a${addAttribute("/articles/" + article.slug, "href")}> ${renderComponent($$result, "Image", $$Image, { "src": article.data.image, "quality": "mid", "format": "avif", "alt": "Article Image", "class": "w-full h-auto rounded-2xl" })} <div class="absolute inset-0 flex flex-col items-center justify-center bg-black opacity-80 hover:opacity-75 transition duration-300 ease-in-out text-white text-center rounded-2xl"> <div> <h2 class="text-2xl font-semibold sm:text-3xl"> ${article.data.title} </h2> <p class="text-xl mt-4">${formatDate(article.data.pubDate)}</p> <!-- Tags with rounded border --> <div class="flex mt-4 justify-center"> ${article.data.tags.map((tag) => renderTemplate`<span class="px-2 py-1 border text-white rounded-full text-xs mr-2">#${capitalize(tag)}</span>`)} </div> </div> </div> </a> </div>`;
+  return renderTemplate`${maybeRenderHead()}<div class="relative inline-block w-full sm:w-auto cursor-pointer rounded-2xl"> <a${addAttribute("/articles/" + article.slug, "href")}> ${renderComponent($$result, "Image", $$Image, { "src": article.data.image, "quality": "mid", "format": "webp", "alt": "Article Image", "class": "w-full h-auto rounded-2xl" })} <div class="absolute inset-0 flex flex-col items-center justify-center bg-black opacity-80 hover:opacity-75 transition duration-300 ease-in-out text-white text-center rounded-2xl"> <div> <h2 class="text-2xl font-semibold sm:text-3xl"> ${article.data.title} </h2> <p class="text-xl mt-4">${formatDate(article.data.pubDate)}</p> <!-- Tags with rounded border --> <div class="flex mt-4 justify-center"> ${article.data.tags.map((tag) => renderTemplate`<span class="px-2 py-1 border text-white rounded-full text-xs mr-2">#${capitalize(tag)}</span>`)} </div> </div> </div> </a> </div>`;
 }, "/home/zan/Code/astro-mbk-vercel/src/components/MostRecentArticle.astro", void 0);
 
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
